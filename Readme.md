@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Антон Аверьянов](https://up.htmlacademy.ru/htmlcss/36/user/544889).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
