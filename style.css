@@ -1,0 +1,14 @@
+/* .visually-hidden
+{
+  display:none;
+} */
+.navigation-list
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+
+}
