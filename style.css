@@ -1,3 +1,205 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("inter400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("inter700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("inter900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#2D3440;
+  background-color: #FEAFC3;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h5, b  {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.promo-header, .popular-header, .about-header {
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+input::placeholder {
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+select {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#2D3440;
+}
+
+.button {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color:#2D3440;
+}
+
+.navigation-menu {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-user {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color:#2D3440;
+}
+
+.navigation-phone {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.breadcrumbs-link {
+  font-weight: 700;
+  text-decoration: none;
+  color:#2D3440;
+}
+
+.inner-header {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-link-active {
+  text-decoration: underline;
+}
+
+.slider-description {
+  text-align: left;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-card {
+  text-align: left;
+}
+
+.promo-card-button {
+  text-decoration: none;
+}
+
+.product-filter-button {
+  font-size: 14px;
+}
+
+.popular-card, .catalog-card{
+  text-align: center;
+  background-color: #FCFCFC;
+}
+
+.about-item {
+  text-align: left;
+}
+
+.blog-card {
+  text-align: left;
+}
+
+.contacts-text-interlinear {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color:#2D3440;
+  font-weight: 700;
+}
+
+.pagination-link {
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color:#2D3440;
+}
+
+.lovely-link {
+  font-weight: 700;
+}
+
+.footer-developer-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-developer-link {
+  text-decoration: none;
+  color:#2D3440;
+}
+
 .visually-hidden {
   display: none;
 }
