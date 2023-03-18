@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("inter400.woff2") format("woff2");
+  src: url("./fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("inter700.woff2") format("woff2");
+  src: url("./fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,44 +18,69 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("inter900.woff2") format("woff2");
+  src: url("./fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color:#2D3440;
+  color: #2D3440;
   background-color: #FEAFC3;
 }
 
+.main-index {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  outline: solid 5px black;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 h2 {
+  margin: 0;
   font-size: 36px;
   font-weight: 900;
   line-height: 46px;
 }
 
 h3 {
+  margin: 0;
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
 }
 
 h4 {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
-h5, b  {
+h5,
+b {
+  margin: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.promo-header, .popular-header, .about-header {
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.promo-header,
+.popular-header,
+.about-header {
   text-align: center;
 }
 
@@ -79,7 +104,7 @@ select {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color:#2D3440;
+  color: #2D3440;
 }
 
 .button {
@@ -88,33 +113,78 @@ select {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  color:#2D3440;
+  color: #2D3440;
+}
+
+.page-header {
+  outline: solid 2px red;
+  max-width: 1170px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.navigation {
+  outline: solid 2px blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .navigation-menu {
+  outline: solid 2px yellow;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
 }
 
+.navigation-logo {
+  text-decoration: none;
+}
+
+.navigation-link-logo {
+  margin-right: 16px;
+}
+
+.navigation-link {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
 .navigation-user {
+  outline: solid 2px yellow;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-size: 14px;
   line-height: 20px;
 }
 
-.navigation-link {
+.navigation-search {
+  padding: 8px;
   text-decoration: none;
-  color:#2D3440;
+}
+
+.navigation-button {
+  padding: 6px 16px;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .navigation-phone {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  color: #2D3440;
 }
+
 .breadcrumbs-link {
   font-weight: 700;
   text-decoration: none;
-  color:#2D3440;
+  color: #2D3440;
 }
 
 .inner-header {
@@ -135,24 +205,112 @@ select {
   line-height: 24px;
 }
 
+.promo {
+  outline: solid 2px red;
+  height: 416px;
+}
+
+.promo-field {
+  outline: solid 2px blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .promo-card {
+  outline: solid 2px yellow;
+  width: 570px;
+  min-height: 268px;
   text-align: left;
+  background-color: #FF7799;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 36px;
+}
+
+.promo-card:nth-of-type(1){
+  background-image: url('./images/png/promo-raspberry.png');
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.promo-card-description {
+  outline: solid 2px purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 316px;
 }
 
 .promo-card-button {
+  width: 176px;
+  height: 44px;
   text-decoration: none;
+  background: #FCFCFC;
+  border: solid 4px rgba(255, 47, 100, 0.3);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
+
+.promo-card-button::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .product-filter-button {
   font-size: 14px;
 }
 
-.popular-card, .catalog-card{
+.popular-list {
+  outline: solid 2px red;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.popular-card,
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 281px;
+  border-radius: 16px;
   text-align: center;
   background-color: #FCFCFC;
 }
 
+.about {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 56px 40px;
+  box-sizing: border-box;
+}
+
+.about-header {
+  margin-bottom: 56px;
+}
+
+.about-list {
+  outline: solid 2px red;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  /* grid-template-columns: 1fr 1fr; */
+  column-gap: 95px;
+  row-gap: 40px;
+  list-style: none;
+  /* justify-content: center; */
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
 .about-item {
+  outline: solid 2px blue;
+  max-width: 440px;
+  /* max-width: 505px; */
   text-align: left;
 }
 
@@ -170,7 +328,7 @@ select {
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
-  color:#2D3440;
+  color: #2D3440;
   font-weight: 700;
 }
 
@@ -179,25 +337,80 @@ select {
   text-decoration: none;
 }
 
+.page-footer {
+  outline: solid 2px red;
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 48px auto;
+}
+
+.footer-social {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-links {
+  outline: solid 2px blue;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 24px;
+  row-gap: 8px;
+  position: relative;
+}
+
+.footer-developer {
+  outline: solid 2px blue;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-developer-logo {
+  display: block;
+}
+
 .footer-link {
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color:#2D3440;
+  color: #2D3440;
+}
+
+.footer-logo-link {
+  outline: solid 2px purple;
+  text-decoration: none;
 }
 
 .lovely-link {
   font-weight: 700;
 }
 
+.lovely-link::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -21px;
+  width: 16px;
+  height: 16px;
+  background-image: url("./images/svg/icon-heart.svg");
+  background-size: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .footer-developer-text {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .footer-developer-link {
   text-decoration: none;
-  color:#2D3440;
+  color: #2D3440;
 }
 
 .visually-hidden {
