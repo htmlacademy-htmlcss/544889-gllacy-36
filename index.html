@@ -22,9 +22,9 @@
       </div>
       <div class="navigation-user">
         <a class="navigation-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <a class="navigation-search" href="#" aria-label="Поиск">Поиск</a>
-        <a class="navigation-button" href="#" aria-label="Вход">Вход</a>
-        <a class="navigation-button" href="#" aria-label="Корзина">Корзина</a>
+        <a class="navigation-search" href="#" aria-label="Поиск"></a>
+        <a class="navigation-login" href="#" aria-label="Вход">Вход</a>
+        <a class="navigation-cart" href="#" aria-label="Корзина">2 товара</a>
       </div>
     </nav>
   </header>
@@ -36,56 +36,51 @@
       <h2 class="visually-hidden">
         Готовые рожки на выбор!
       </h2>
-      <ul class="slider-decription">
-        <li class="slider-decription-item">
+      <ul class="slider-description">
+        <li class="slider-description-item slider-description-active">
           <h2 class="slider-header">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это
             идеальный десерт для всей семьи.</p>
-          <a class="button slider-button-order">Заказать</a>
+          <a class="button button-white slider-button-order">Заказать</a>
         </li>
-        <li class="slider-decription-item">
+        <li class="slider-description-item">
           <h2 class="slider-header">Сливочное мороженое со вкусом банана</h2>
           <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже
             в
             самый жаркий летний день.</p>
-          <a class="button slider-button-order">Заказать</a>
+          <a class="button button-white slider-button-order">Заказать</a>
         </li>
-        <li class="slider-decription-item">
+        <li class="slider-description-item">
           <h2 class="slider-header">Карамельный пломбир с маршмеллоу</h2>
           <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца
             сладкоежек всех возрастов.</p>
-          <a class="button slider-button-order">Заказать</a>
+          <a class="button button-white slider-button-order">Заказать</a>
         </li>
       </ul>
-      <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущее фото</span>
-      </button>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следующее фото</span>
-      </button>
-      <ul class="slider-photo-list">
-        <li class="slider-photo-item">
-          <img class="slider-photo" src="images/png/slider-icecream1.png" width="350" height="507"
-            alt="Нежный пломбир с клубничным джемом">
-        </li>
-        <li class="slider-photo-item">
-          <img class="slider-photo" src="images/png/slider-icecream2.png" width="350" height="507"
-            alt="Сливочное мороженое со вкусом банана">
-        </li>
-        <li class="slider-photo-item">
-          <img class="slider-photo" src="images/png/slider-icecream3.png" width="350" height="507"
-            alt="Карамельный пломбир с маршмеллоу">
-        </li>
-      </ul>
+      <article class="slider-carousel">
+        <h2 class="visually-hidden">Карусель</h2>
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <img class="slider-photo slider-photo-active" src="images/png/slider-icecream1.png" width="330" height="507"
+          alt="Нежный пломбир с клубничным джемом">
+        <img class="slider-photo" src="images/png/slider-icecream2.png" width="330" height="507"
+          alt="Сливочное мороженое со вкусом банана">
+        <img class="slider-photo" src="images/png/slider-icecream3.png" width="330" height="507"
+          alt="Карамельный пломбир с маршмеллоу">
+      </article>
       <div class="slider-social">
-        <a class="social-item-link" href="https://t.me/htmlacademy" aria-label="Telegram">Telegtam</a>
-        <a class="social-item-link" href="https://vk.com/htmlacademy" aria-label="VK">VK</a>
-        <a class="social-item-link" href="https://youtube.com/htmlacademyru" aria-label="YouTube">YouTube</a>
+        <a class="social-item-link social-telegram" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
+        <a class="social-item-link social-vk" href="https://vk.com/htmlacademy" aria-label="VK"></a>
+        <a class="social-item-link social-youtube" href="https://youtube.com/htmlacademyru" aria-label="YouTube"></a>
       </div>
       <div class="slider-dots">
-        <button class="slider-dots-button slider-dots-button-current" aria-label="Первый слайд" type="button">1</button>
-        <button class="slider-dots-button" aria-label="Второй слайд" type="button">2</button>
-        <button class="slider-dots-button" aria-label="Третий слайд" type="button">3</button>
+        <button class="slider-dots-button slider-dots-button-active" aria-label="Первый слайд" type="button"></button>
+        <button class="slider-dots-button" aria-label="Второй слайд" type="button"></button>
+        <button class="slider-dots-button" aria-label="Третий слайд" type="button"></button>
       </div>
     </section>
 
@@ -100,7 +95,7 @@
             <p class="promo-card-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового
               варенья бесплатно.</p>
-            <a class="button promo-card-button" href="catalog.html">Хочу подарок</a>
+            <a class="button button-white promo-card-button" href="catalog.html">Хочу подарок</a>
           </div>
         </article>
         <article class="promo-card promo-right">
@@ -108,7 +103,7 @@
             <h4 class="promo-card-header">Маршмеллоу даром!</h4>
             <p class="promo-card-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно
               бесплатно.</p>
-            <a class="button promo-card-button" href="catalog.html">Хочу подарок</a>
+            <a class="button button-white promo-card-button" href="catalog.html">Хочу подарок</a>
           </div>
         </article>
       </div>
@@ -221,11 +216,11 @@
 
     <section class="delivery">
       <div class="delivery-description-field">
-      <h3 class="delivery-header">
-        Доставка любимого мороженого на дом
-      </h3>
-      <p class="delivery-decription">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
-        Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <h3 class="delivery-header">
+          Доставка любимого мороженого на дом
+        </h3>
+        <p class="delivery-decription">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
+          Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       </div>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
@@ -253,7 +248,7 @@
         Адрес офлайн-магазина
       </h3>
       <div class="contacts-box">
-        <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="contacts-text contacts-text-address">Адрес главного офиса и офлайн-магазина:</p>
         <address class="contacts-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
         <p class="contacts-text">Для заказов по телефону:</p>
         <a class="contacts-phone" href="+78128121212">+7 (812) 812-12-12</a>
@@ -265,9 +260,10 @@
 
   <footer class="page-footer">
     <div class="footer-social">
-      <a class="social-item-link" href="https://t.me/htmlacademy" aria-label="Telegram">Telegtam</a>
-      <a class="social-item-link" href="https://vk.com/htmlacademy" aria-label="VK">VK</a>
-      <a class="social-item-link" href="https://youtube.com/htmlacademyru" aria-label="YouTube">YouTube</a>
+      <a class="social-item-link social-telegram" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
+      <a class="social-item-link social-vk" href="https://vk.com/htmlacademy" aria-label="VK"></a>
+      <a class="social-item-link social-youtube" href="https://youtube.com/htmlacademyru"
+        aria-label="YouTube"></a>
     </div>
     <div class="footer-links">
       <a class="footer-link lovely-link" href="#">Для поставщиков</a>
