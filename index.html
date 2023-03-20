@@ -212,7 +212,7 @@
           <p class="blog-form-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
             вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <div class="blog-input-field">
-            <input type="email" placeholder="example@email.com">
+            <input class="input blog-input" type="email" placeholder="example@email.com">
             <button class="button blog-button send-button" type="submit">Отправить</button>
           </div>
         </form>
@@ -220,29 +220,31 @@
     </section>
 
     <section class="delivery">
+      <div class="delivery-description-field">
       <h3 class="delivery-header">
         Доставка любимого мороженого на дом
       </h3>
       <p class="delivery-decription">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
         Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+      </div>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
         </p>
         <p class="delivery-input delivery-date">
-          <label for="delivery-date">Дата</label>
+          <label class="delivery-address-label" for="delivery-date">Дата</label>
           <span class="visually-hidden">Дополнительная информация</span>
-          <input type="text" id="delivery-date" placeholder="01.04.2020">
+          <input class="input" type="text" id="delivery-date" placeholder="01.04.2020">
         </p>
         <p class="delivery-input delivery-phone">
-          <label for="delivery-phone">Телефон</label>
-          <input type="tel" id="delivery-phone" placeholder="+7 800 999-00-00">
+          <label class="delivery-address-label" for="delivery-phone">Телефон</label>
+          <input class="input" type="tel" id="delivery-phone" placeholder="+7 800 999-00-00">
         </p>
         <p class="delivery-input delivery-address">
-          <label for="delivery-address">Адрес</label>
+          <label class="delivery-address-label" for="delivery-address">Адрес</label>
           <span class="visually-hidden">Дополнительная информация</span>
-          <input type="text" id="delivery-address" placeholder="01.04.2020">
+          <input class="input" type="text" id="delivery-address" placeholder="01.04.2020">
         </p>
-        <button class="button blog-button send-button" type="submit">Отправить</button>
+        <button class="button delivery-button send-button" type="submit">Отправить</button>
       </form>
     </section>
 
