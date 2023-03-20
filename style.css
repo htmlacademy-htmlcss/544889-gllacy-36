@@ -185,6 +185,13 @@ select {
   color: #2D3440;
 }
 
+.link-select {
+  background-image: url("./images/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* padding-right: 20px; */
+}
+
 .navigation-user {
   display: flex;
   align-items: center;
@@ -920,8 +927,13 @@ select {
   width: 1170px;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 76px auto 0;
   padding: 48px 0;
+  margin: 0 auto;
+}
+
+.page-footer-catalog
+{
+  margin: 76px auto 0;
   border-top: solid 1px #FCFCFC;
 }
 
